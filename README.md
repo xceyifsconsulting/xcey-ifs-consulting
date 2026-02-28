@@ -1,45 +1,34 @@
-HEAD
-# xcey-ifs-consulting
-xcey-ifs-consulting
+# XCEY IFS Consulting Website
 
-# XCEY IFS Consulting Services
+## Current Structure
+- `index.html` - Home page
+- `about-us.html` - About page  
+- `services/index.html` - Services page
+- `pricing.html` - Pricing page
+- `contact-us.html` - Contact page
 
-Professional website for XCEY IFS Consulting, providing expert post-go-live support and system stabilization services for North American manufacturers using IFS ERP.
+## Recent Updates Completed
 
-## About This Project
+### Services Page
+- Created properly styled services page matching website design patterns
+- Uses consistent color scheme (#1e3a8a, #3b82f6) and styling
+- Includes all structural elements with proper CSS classes
 
-This repository contains the complete website for XCEY IFS Consulting Services, featuring:
-- Professional corporate design with McKinsey-style aesthetics
-- Responsive layout for all devices
-- Services focused on IFS ERP post-implementation support
-- Contact and information pages
+### Pricing Page
+- Implemented responsive horizontal pricing cards
+- Added CSS styling for `pricing-grid` and `pricing-card` classes
+- Cards display side-by-side on desktop and stack vertically on mobile
+- Maintains consistent styling with rest of site
 
-## Website Structure
+## Implementation Details
+All pages now use:
+- Same CSS variables (primary-color, secondary-color, etc.)
+- Consistent grid layouts with proper responsive design
+- Same header/navigation structure
+- Proper footer implementation
+- Mobile-responsive design patterns
 
-- `index.html` - Homepage
-- `about-us.html` - About the consulting firm
-- `services/` - Services offered
-- `pricing.html` - Pricing information
-- `contact-us.html` - Contact form and information
-- `thank-you.html` - Confirmation page
-- `assets/` - CSS, images, and other resources
-
-## Technology Stack
-
-- HTML5
-- CSS3 (with responsive design)
-- Pure vanilla JavaScript (no frameworks)
-- GitHub Pages for hosting
-
-## Deployment
-
-This website is automatically deployed via GitHub Pages when changes are pushed to the main branch.
-
-## Contact
-
-For inquiries about IFS ERP support, system stabilization, or post-go-live services, please contact us through the website.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-32dc38a (Initial commit of XCEY IFS Consulting website)
+## Deploy Instructions
+After making changes to any HTML or CSS files:
+1. Commit changes to Git: `git add . && git commit -m "Update website content"`
+2. Push to repository: `git push origin main`
