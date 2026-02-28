@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact XCEY IFS Consulting Services - Expert post-go-live support and system stabilization for North American manufacturers using IFS ERP.">
-    <meta name="keywords" content="IFS ERP contact, post-go-live support contact, system stabilization contact, IFS consulting contact">
-    <title>Contact Us - XCEY IFS Consulting Services</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Contact Us - XCEY IFS Consulting</title>
+    <meta name="description" content="Contact XCEY IFS Consulting for expert post-go-live support and system stabilization services for North American manufacturers using IFS ERP.">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo-container">
-                <a href="index.html">
-                    <img src="assets/images/logo.svg" alt="XCEY IFS Consulting Logo" width="200" height="80">
-                </a>
+                <img src="assets/images/logo.svg" alt="XCEY IFS Consulting Logo">
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="about-us.html">About</a></li>
                     <li><a href="services/index.html">Services</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="contact-us.html">Contact</a></li>
@@ -31,41 +31,64 @@
 
     <section class="banner">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Get in touch with our expert team for IFS ERP support</p>
+            <h2>Contact XCEY IFS Consulting</h2>
+            <p>Get in touch with our experts for post-go-live support and system stabilization services</p>
         </div>
     </section>
 
     <main class="main">
         <div class="container">
-            <section class="contact-content">
+            <div class="contact-content">
                 <div class="contact-info">
                     <h2>Let's Discuss Your ERP Needs</h2>
-                    <p>Our team of experienced consultants is ready to help you optimize your IFS ERP system for maximum efficiency and business success.</p>
+                    <p>Our team of experts is ready to help you optimize your IFS ERP implementation and ensure long-term success. Whether you need immediate support during your go-live phase or ongoing system stabilization, we're here to provide the guidance you need.</p>
                     
                     <div class="contact-details">
                         <div class="contact-item">
+                            <h3><i>📍</i> Office Location</h3>
+                            <p>123 Manufacturing Avenue<br>Industry District, NY 10001</p>
+                        </div>
+                        
+                        <div class="contact-item">
                             <h3><i>📞</i> Phone</h3>
-                            <p>+1 (800) 555-1234</p>
+                            <p>+1 (555) 123-4567</p>
                         </div>
                         
                         <div class="contact-item">
                             <h3><i>✉️</i> Email</h3>
-                            <p>info@xcye-ifs-consulting.com</p>
+                            <p>info@xcy-consulting.com</p>
                         </div>
+                        
+                        <div class="contact-item">
+                            <h3><i>🕒</i> Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Weekends: By appointment</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 3rem;">
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #1e3a8a; margin-bottom: 1.5rem;">Our Manufacturing Expertise</h3>
+                        <p>We specialize in providing IFS ERP consulting services that address the unique challenges of manufacturing environments:</p>
+                        <ul style="margin: 1.5rem 0; padding-left: 1.5rem;">
+                            <li>Post-go-live support and system stabilization</li>
+                            <li>MTO/ETO manufacturing process optimization</li>
+                            <li>Supply chain and inventory management</li>
+                            <li>Production scheduling and resource planning</li>
+                            <li>Quality management system integration</li>
+                            <li>ERP system performance optimization</li>
+                        </ul>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <h3>Send us a message</h3>
-                    <form action="thank-you.html" method="get">
+                    <h2>Send Us a Message</h2>
+                    <form action="#" method="POST" style="margin-top: 2rem;">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         
@@ -75,19 +98,64 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" style="width: 100%; padding: 0.8rem; border: 1px solid #cbd5e1; border-radius: 8px; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1rem;">
+                                <option value="">Select a service</option>
+                                <option value="post-go-live">Post-Go-Live Support</option>
+                                <option value="system-stabilization">System Stabilization</option>
+                                <option value="manufacturing-optimization">Manufacturing ERP Optimization</option>
+                                <option value="micro-services">Micro-Services Solutions</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
                     </form>
                 </div>
-            </section>
+            </div>
+            
+            <div style="margin: 5rem 0; text-align: center;">
+                <h2>Our Manufacturing Excellence Approach</h2>
+                <p style="max-width: 800px; margin: 2rem auto; font-size: 1.1rem; line-height: 1.8; color: #555;">
+                    We combine technical expertise with industry knowledge to deliver solutions that drive real business impact in manufacturing environments.
+                </p>
+                <div style="margin: 3rem 0; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <img src="https://images.unsplash.com/photo-1581044774502-9912f1114800?auto=format&fit=crop&w=600&h=400" 
+                             alt="Manufacturing team working with ERP systems" 
+                             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                         <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">ERP Implementation Team Collaboration</p>
+                    </div>
+                    <div style="flex: 1; min-width: 250px;">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&h=400" 
+                             alt="Industrial manufacturing facility" 
+                             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                         <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Modern Manufacturing Facility</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About</a>
+                <a href="services/index.html">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact-us.html">Contact</a>
+            </div>
             <p>&copy; 2026 XCEY IFS Consulting Services. All rights reserved.</p>
         </div>
     </footer>
