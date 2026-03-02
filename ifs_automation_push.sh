@@ -63,15 +63,14 @@ echo "Committing changes with message:"
 echo "\"$COMMIT_MSG\""
 git commit -m "$COMMIT_MSG"
 
-# 9. Push to GitHub
+# 9. Sync with Remote and Push
+echo "Syncing with GitHub..."
+git pull origin main --rebase
+
 echo "Pushing to remote repository..."
-if ! git push; then
-    echo "Push failed. Trying with verbose output..."
-    git push -v
-    if [ $? -ne 0 ]; then
-        echo "Error: Final push attempt failed"
-        exit 1
-    fi
+if ! git push origin main; then
+    echo "Push failed. Manual intervention may be required for merge conflicts."
+    exit 1
 fi
 
 # 10. Validate push
