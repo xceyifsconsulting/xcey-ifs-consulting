@@ -1,19 +1,31 @@
+/* Global Dark Mode Variables */
+:root {
+  --background-color: #1e1e2f;
+  --text-color: #ffffff;
+  --primary-color: #6c63ff;
+  --secondary-color: #a89eff;
+  --border-radius: 10px;
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 12px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s ease;
+}
+
 /* Pricing Grid */
 .pricing-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   margin: 4rem 0;
 }
 
 .pricing-card {
   min-width: 300px;
   flex-shrink: 0;
-  background: white;
+  background: var(--background-color);
   border-radius: var(--border-radius);
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: var(--shadow-md);
-  border: 1px solid #e2e8f0;
+  border: 1px solid #2a2a3f;
   transition: var(--transition);
   text-align: center;
   display: flex;
@@ -35,6 +47,7 @@
 
 .pricing-card p {
   margin-bottom: 1rem;
+  color: var(--text-color);
 }
 
 .pricing-card ul {
@@ -46,7 +59,7 @@
 
 .pricing-card li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #2a2a3f;
 }
 
 .pricing-card li:last-child {
@@ -75,9 +88,11 @@ form {
 
 form input, form textarea {
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #4a4a5f;
   border-radius: var(--border-radius);
   width: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 form input:focus, form textarea:focus {
