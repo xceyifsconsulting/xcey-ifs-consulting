@@ -35,13 +35,7 @@
     <main class="main">
         <section class="features" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
             <div style="text-align: center; margin-bottom: 60px;">
-                <div class="photo-carousel" style="position: relative; max-width: 800px; margin: 0 auto; height: 500px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-                    <img class="carousel-img" src="https://images.unsplash.com/photo-1581092945129-8ac9ba7eceeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="North American manufacturing shop floor" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 1; transition: opacity 0.8s ease-in-out;">
-                    <img class="carousel-img" src="https://images.unsplash.com/photo-1565514020179-026b92f84d88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Industrial factory production line" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease-in-out;">
-                    <img class="carousel-img" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Factory worker on production line" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease-in-out;">
-                    <img class="carousel-img" src="https://images.unsplash.com/photo-1581091918492-f88b4c2e0b0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Manufacturing assembly line" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease-in-out;">
-                    <img class="carousel-img" src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Industrial manufacturing facility" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease-in-out;">
-                </div>
+                <img src="https://images.unsplash.com/photo-1581092918492-f88b4c2e0b0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="USA manufacturing shop floor with industrial equipment" class="hero-image" style="max-width: 800px; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
             </div>
             <h2 class="section-title">Comprehensive IFS ERP Services</h2>
             <div class="features-grid">
@@ -157,27 +151,5 @@
             <p>&copy; 2026 XCEY IFS Consulting. Expert IFS ERP solutions for North American manufacturers.</p>
         </div>
     </footer>
-
-    <script>
-        let currentImageIndex = 0;
-        const carouselImages = document.querySelectorAll('.carousel-img');
-        const totalImages = carouselImages.length;
-
-        function rotateCarousel() {
-            // Hide all images
-            carouselImages.forEach(img => {
-                img.style.opacity = '0';
-            });
-            
-            // Show current image
-            carouselImages[currentImageIndex].style.opacity = '1';
-            
-            // Move to next image
-            currentImageIndex = (currentImageIndex + 1) % totalImages;
-        }
-
-        // Rotate every 30 seconds
-        setInterval(rotateCarousel, 30000);
-    </script>
 </body>
 </html>
