@@ -107,7 +107,15 @@
                     <div style="background: white; padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow-lg);">
                         <h3 style="color: var(--primary-color); margin-bottom: 30px; font-size: 1.6em; text-align: center;">Submit Your IFS Support Ticket</h3>
                         
-                        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 25px;" enctype="multipart/form-data">
+                        <form action="https://formspree.io/f/xovabrqe" method="post" style="display: flex; flex-direction: column; gap: 25px;" enctype="multipart/form-data">
+                            
+                            <!-- Formspree configuration -->
+                            <input type="hidden" name="_next" value="https://xceyifsconsulting.com/thank-you.html">
+                            <input type="hidden" name="_subject" value="New IFS Support Ticket Submitted">
+                            <input type="hidden" name="_cc" value="xceyifsconsulting@gmail.com">
+                            
+                            <!-- Honeypot spam protection -->
+                            <input type="text" name="_gotcha" style="display:none !important">
                             
                             <!-- Priority Level -->
                             <div style="background: #f8f9fa; padding: 20px; border-radius: var(--border-radius); border: 2px solid #dee2e6;">
