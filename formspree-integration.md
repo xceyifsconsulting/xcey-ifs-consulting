@@ -39,9 +39,30 @@ The contact form on the XCEY IFS Consulting website is integrated with Formspree
 - Progressive enhancement with JavaScript form validation (can be added later)
 
 ## Testing
+
+### Production Testing (Recommended)
 - Test form submissions at: https://xceyifsconsulting.com/contact-us.html
 - Monitor form submissions in Formspree dashboard
 - Verify email delivery to xceyifsconsulting@gmail.com
+
+### Local Development Testing
+**⚠️ Important:** The main contact form will NOT work on localhost due to CORS and server limitations.
+
+**Error you'll see on localhost:**
+```
+Error code: 501 - Unsupported method ('POST')
+Server does not support this operation
+```
+
+**Solutions for local testing:**
+1. **Use the test version:** Open `contact-us-test.html` on localhost - shows form data without sending
+2. **Test on live site:** Use the production URL for real form testing
+3. **Mock testing:** Use browser dev tools to inspect form data
+
+**Why this happens:**
+- Formspree expects requests from xceyifsconsulting.com domain
+- Local servers don't handle external POST requests the same way
+- CORS restrictions prevent cross-origin form submissions
 
 ## Next Steps (Optional Enhancements)
 1. Add JavaScript form validation for better UX
